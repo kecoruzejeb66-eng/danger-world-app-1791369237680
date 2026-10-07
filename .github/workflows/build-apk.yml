@@ -16,7 +16,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.22.0'
-      - run: flutter create --platforms=android .
+      - run: flutter create --platforms=android --project-name danger_world_app .
       - run: flutter pub get
       - run: flutter build apk --release
       - uses: softprops/action-gh-release@v1
